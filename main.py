@@ -1,10 +1,10 @@
-def filter_python_strings(string_list):
-    filtered_list = []
-    for string in string_list:
-        if "Python" in string:
-            filtered_list.append(string)
-            return filtered_list
-            input_list = input("Введіть список рядків (розділених пробілами): ").split()
-            filtered_strings = filter_python_strings(input_list)
-            print("Результат:", filtered_strings)
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
+    def get_info(self):
+        print("Ім'я студента:", self.name)
+        print("Вік студента:", self.age)
+student1 = Student("HolyMoly", 20)
+student1.get_info()
