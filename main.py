@@ -1,10 +1,10 @@
-students_grades = {
-    "Gloria": 90,
-    "Dazai": 85,
-    "Fedor": 92,
-    "Atsushi": 88,
-    "Akutagawa": 95
-}
-top_student = max(students_grades, key=students_grades.get)
-print("Студент з найвищою оцінкою:", top_student)
+def filter_capitalized_strings(string_list):
+    filtered_list = []
+    for string in string_list:
+        if string[0].isupper():
+            filtered_list.append(string)
+            return filtered_list
+            input_list = input("Введіть список рядків (розділених пробілами): ").split()
+            filtered_strings = filter_capitalized_strings(input_list)
+            print("Результат:", filtered_strings)
 
