@@ -1,8 +1,5 @@
-number1 = int(input("Введіть перше число: "))
-number2 = int(input("Введіть друге число: "))
-start = min(number1, number2)
-end = max(number1, number2)
-sum_of_range = 0
-for num in range(start+1, end):
-    sum_of_range += num
-print("Сума чисел у діапазоні між", start, "і", end, "дорівнює", sum_of_range)
+sum_of_even = 0
+for num in range(1, 101):
+    if num % 2 == 0:
+        sum_of_even += num
+print("Сума парних чисел від 1 до 100 дорівнює", sum_of_even)
