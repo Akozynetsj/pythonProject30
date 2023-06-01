@@ -1,4 +1,10 @@
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-even_numbers = [num for num in numbers if num % 2 == 0]
-print("Список парних чисел:", even_numbers)
+students_grades = {
+    "Gloria": 90,
+    "Dazai": 85,
+    "Fedor": 92,
+    "Atsushi": 88,
+    "Akutagawa": 95
+}
+top_student = max(students_grades, key=students_grades.get)
+print("Студент з найвищою оцінкою:", top_student)
 
